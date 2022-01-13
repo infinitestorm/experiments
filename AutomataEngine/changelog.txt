@@ -1,0 +1,5 @@
+About: Something that runs cellular automata
+
+v20220113a:
+    + Initial release
+        > Includes some preset cellular automata such as Conways's Game of Life and some that I have coded
