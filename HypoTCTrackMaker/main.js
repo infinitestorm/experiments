@@ -3,8 +3,8 @@ var HypoTrack = (function(){
     const VERSION = '20220803a';
     const IDB_KEY = 'hypo-track';
 
-    const WIDTH = 1200;
-    const HEIGHT = 600;
+    const WIDTH = 1600;
+    const HEIGHT = 800;
     const COLORS = ['#5ebaff','#00faf4','#c4ffff','#efefb0','#ffda35','#f9ad17','#ff7b42','#fc486a','#ce1234','#9a0823','#c0c0c0'];
     const COLORS_LEGACY = ['#5ebaff','#00faf4','#c4ffff','#efefb0','#ffda35','#f9ad17','#ff7b42','#fc486a','#ce1234','#9a0823','#c0c0c0'];
 
