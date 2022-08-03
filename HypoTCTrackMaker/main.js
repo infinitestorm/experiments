@@ -3,10 +3,10 @@ var HypoTrack = (function(){
     const VERSION = '20220803a';
     const IDB_KEY = 'hypo-track';
 
-    const WIDTH = 1000;
-    const HEIGHT = 500;
-    const COLORS = ['#5ebaff','#00faf4','#fff795','#ffd821','#ff8f20','#ff6060','#c464d9','#c0c0c0'];
-    const COLORS_LEGACY = ['#5ebaff','#00faf4','#ffffcc','#ffe775','#ffc140','#ff8f20','#ff6060','#c0c0c0'];
+    const WIDTH = 1600;
+    const HEIGHT = 800;
+    const COLORS = ['#5ebaff','#00faf4','#c4ffff','#efefb0','#ffda35','#f9ad17','#ff7b42','#fc486a','#ce1234','#9a0823','#c0c0c0'];
+    const COLORS = ['#5ebaff','#00faf4','#c4ffff','#efefb0','#ffda35','#f9ad17','#ff7b42','#fc486a','#ce1234','#9a0823','#c0c0c0'];
 
     let loadedMapImg,
         mapImgs,
@@ -80,7 +80,7 @@ var HypoTrack = (function(){
             // image(mapImg,0,HEIGHT-WIDTH/2,WIDTH,WIDTH/2,panLocation.x,panLocation.y,mapViewWidth(),mapViewHeight());
             drawMap();
             let dotSize = 2*pow(1.25,zoomAmt);
-            strokeWeight(dotSize/9);
+            strokeWeight(dotSize/5.5);
             for(let i=0;i<tracks.length;i++){
                 if(!hideNonSelectedTracks || selectedTrack === tracks[i]){
                     for(let j=0;j<tracks[i].length;j++){
@@ -126,18 +126,18 @@ var HypoTrack = (function(){
                         function mark(x){
                             if(x >= -dotSize/2 && x < WIDTH + dotSize/2 && coords.y >= (HEIGHT-WIDTH/2) - dotSize/2 && coords.y < HEIGHT + dotSize/2){
                                 if(d.type === 0)
-                                    ellipse(x,coords.y,dotSize,dotSize);
+                                    ellipse(coords.x,coords.y,dotSize*1.65,dotSize*1.65);
                                 else if(d.type === 1)
-                                    rect(x-dotSize*0.35,coords.y-dotSize*0.35,dotSize*0.7,dotSize*0.7);
+                                    rect(coords.x-dotSize/1.7,coords.y-dotSize/1.7,dotSize*1.15,dotSize*1.15);
                                 else if(d.type === 2)
                                     triangle(
-                                        x+dotSize/2.2*cos(PI/6),
-                                        coords.y+dotSize/2.2*sin(PI/6),
-                                        x+dotSize/2.2*cos(5*PI/6),
-                                        coords.y+dotSize/2.2*sin(5*PI/6),
-                                        x+dotSize/2.2*cos(3*PI/2),
-                                        coords.y+dotSize/2.2*sin(3*PI/2)
-                                        );
+                                        coords.x+dotSize/1.32*cos(PI/6),
+                                        coords.y+dotSize/1.32*sin(PI/6),
+                                        coords.x+dotSize/1.32*cos(5*PI/6),
+                                        coords.y+dotSize/1.32*sin(5*PI/6),
+                                        coords.x+dotSize/1.32*cos(3*PI/2),
+                                        coords.y+dotSize/1.32*sin(3*PI/2)
+                                    );
                             }
                         }
                         mark(coords.x);
@@ -540,12 +540,15 @@ var HypoTrack = (function(){
         let categorySelectData = {
             'Depression': 0,
             'Storm': 1,
-            'Category 1': 2,
-            'Category 2': 3,
-            'Category 3': 4,
-            'Category 4': 5,
-            'Category 5': 6,
-            'Unknown': 7
+            'Severe Storm': 2,
+            'Category 1': 3,
+            'Category 2': 4,
+            'Category 3': 5,
+            'Category 4': 6,
+            'Category 5': 7,
+            'Category 6': 8,
+            'Category 7': 9,
+            'Unknown': 10
         };
 
         let typeSelectData = {
@@ -687,18 +690,24 @@ var HypoTrack = (function(){
             categoryToPlace = 0;
         else if(key === 's')
             categoryToPlace = 1;
-        else if(key === '1')
+        else if(key === '0')
             categoryToPlace = 2;
-        else if(key === '2')
+        else if(key === '1')
             categoryToPlace = 3;
-        else if(key === '3')
+        else if(key === '2')
             categoryToPlace = 4;
-        else if(key === '4')
+        else if(key === '3')
             categoryToPlace = 5;
-        else if(key === '5')
+        else if(key === '4')
             categoryToPlace = 6;
-        else if(key === 'u')
+        else if(key === '5')
             categoryToPlace = 7;
+        else if(key === '6')
+            categoryToPlace = 8;
+        else if(key === '7')
+            categoryToPlace = 9;
+        else if(key === 'u')
+            categoryToPlace = 10;
         else if(key === 't')
             typeToPlace = 0;
         else if(key === 'b')
