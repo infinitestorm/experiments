@@ -689,7 +689,7 @@ var HypoTrack = (function(){
         if(key === 'd')
             categoryToPlace = 0;
         else if(key === 's')
-            categoryToPlace = 1; // test
+            categoryToPlace = 1;
         else if(key === '0')
             categoryToPlace = 2;
         else if(key === '1')
