@@ -128,7 +128,7 @@ var HypoTrack = (function(){
                                 if(d.type === 0)
                                     ellipse(coords.x,coords.y,dotSize*1.65,dotSize*1.65);
                                 else if(d.type === 1)
-                                    rect(coords.x-dotSize/1.7,coords.y-dotSize/1.7,dotSize*1.15,dotSize*1.15);
+                                    rect(coords.x-dotSize/1.7,coords.y-dotSize/1.7,dotSize*1.165,dotSize*1.165);
                                 else if(d.type === 2)
                                     triangle(
                                         coords.x+dotSize/1.32*cos(PI/6),
