@@ -5,8 +5,8 @@ var HypoTrack = (function(){
 
     const WIDTH = 1600;
     const HEIGHT = 800;
-    const COLORS = ['#5ebaff','#00faf4','#c4ffff','#efefb0','#ffda35','#f9ad17','#ff7b42','#fc486a','#ce1234','#9a0823','#c0c0c0']; // test
-    const COLORS_LEGACY = ['#5ebaff','#00faf4','#c4ffff','#efefb0','#ffda35','#f9ad17','#ff7b42','#fc486a','#ce1234','#9a0823','#c0c0c0'];
+    const COLORS = ['#5ebaff','#00faf4','#c4ffff','#efef80','#ffc335','#f18f10','#ff683a','#ff476a','#de1855','#c80d34','#bf0c70','#b732ef','#d323d6','#ff3a9e','#c0c0c0']; // test
+    const COLORS_LEGACY = ['#5ebaff','#00faf4','#c4ffff','#efef80','#ffc335','#f18f10','#ff683a','#ff476a','#de1855','#c80d34','#bf0c70','#b732ef','#d323d6','#ff3a9e','#c0c0c0'];
 
     let loadedMapImg,
         mapImgs,
@@ -548,7 +548,11 @@ var HypoTrack = (function(){
             'Category 5': 7,
             'Category 6': 8,
             'Category 7': 9,
-            'Unknown': 10
+            'Category 8': 10,
+            'Category 9': 11,
+            'Category 10': 12,
+            'Hypercane': 13,
+            'Unknown': 14
         };
 
         let typeSelectData = {
@@ -706,8 +710,16 @@ var HypoTrack = (function(){
             categoryToPlace = 8;
         else if(key === '7')
             categoryToPlace = 9;
-        else if(key === 'u')
+        else if(key === '8')
             categoryToPlace = 10;
+        else if(key === '9')
+            categoryToPlace = 11;
+        else if(key === '0')
+            categoryToPlace = 12;
+        else if(key === 'y')
+            categoryToPlace = 13;
+        else if(key === 'u')
+            categoryToPlace = 14;
         else if(key === 't')
             typeToPlace = 0;
         else if(key === 'b')
