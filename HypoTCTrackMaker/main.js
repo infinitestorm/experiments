@@ -714,7 +714,7 @@ var HypoTrack = (function(){
             categoryToPlace = 10;
         else if(key === '9')
             categoryToPlace = 11;
-        else if(key === '0')
+        else if(key === 'g')
             categoryToPlace = 12;
         else if(key === 'y')
             categoryToPlace = 13;
