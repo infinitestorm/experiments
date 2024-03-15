@@ -1,7 +1,0 @@
-About: A more recent thing I made similar to TFOE Faction Sim. This is more just for fun.
-
-----v201705----
-
----23---
---a--
-+ Added version number & changelog.
