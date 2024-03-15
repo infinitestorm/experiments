@@ -1,7 +1,0 @@
-About: Something I made while bored of course. This, along with other things I do, is related to the Mapping Community.
-
-----v201705----
-
----23---
---a--
-+ Added version number & changelog.
