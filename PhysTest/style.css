@@ -1,8 +1,0 @@
-#window{
-	border:1px dashed #AA0000;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-}
-#window:active{
-	cursor: default;
-}

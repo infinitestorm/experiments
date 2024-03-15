@@ -1,7 +1,0 @@
-About: A physics test thingy with the canvas that I made back in 2015 while still learning javascript.
-
-----v201705----
-
----23---
---a--
-+ Added version number & changelog.
