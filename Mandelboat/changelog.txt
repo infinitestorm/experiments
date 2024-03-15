@@ -1,4 +1,0 @@
-About: Some raycast and Julia Set thingy.
-
-v20181213a:
-	+ Initial release
