@@ -1,7 +1,0 @@
-About: Another project from late 2015 or early 2016 that I made while bored. Doesn't yet use the new tile engine.
-
-----v201705----
-
----23---
---a--
-+ Added version number & changelog.
