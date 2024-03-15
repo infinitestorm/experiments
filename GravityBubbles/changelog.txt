@@ -1,8 +1,0 @@
-About: Another random experiment.
-
-v20201218a:
-      * Refactored the code since it was trash and desparately needed to be less nauseating
-v20180216b:
-      * Speed limit to prevent bouncing glitches.
-v20180216a:
-      + Initial release
