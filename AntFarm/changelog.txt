@@ -1,4 +1,0 @@
-About: Combining simulation of organisms, nationstates, and weather into one neat ant farm
-
-v20190731a:
-    + Added ants, nests, hives, and queen ants
