@@ -1,7 +1,0 @@
-About: We think we know time. Here's what else it could be.
-
-----v201705----
-
----23---
---a--
-+ Added version number & changelog.
