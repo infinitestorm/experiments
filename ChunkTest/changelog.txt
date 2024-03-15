@@ -1,9 +1,0 @@
-About: A test of my tile engine for a new project I'm planning on doing soon.
-
-07/14/2017-present -- v201707x:
-    07/14/2017 -- v20170714a:
-      * Updated libraries.
-
-05/23/2017-07/14/2017 -- v201705x:
-    05/23/2017 -- v20170523a:
-      + Added version number & changelog.
